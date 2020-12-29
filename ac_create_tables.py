@@ -18,7 +18,7 @@ sql1_create_table_data_label = 'create table data_label (' + \
 
 sql2_create_table_feature = 'create table feature (' + \
                             'id int primary key auto_increment, ' + \
-                            'time_span int' + \
+                            'time_span int, ' + \
                             'time_rate float ,' + \
                             'usbmt_id int);'
 
@@ -57,7 +57,7 @@ sql5_create_table_usbmt = 'create table usbmt (' + \
 sql6_create_table_user = 'create table user (' + \
                          'id BIGINT primary key auto_increment, ' + \
                          'tel varchar(32), ' + \
-                         'pwd varchar(64), ' + \
+                         'pwd varchar(128), ' + \
                          'realname varchar(32), ' + \
                          'add_dtime datetime, ' + \
                          'del_tag int, ' + \
